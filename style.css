@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serifa;
+}
+
+.menu1{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    height: 48.4px;
+    
+}
+.menu__section2_ul{
+    display: flex;
+    justify-content: center;
+}
+.menu__section3_ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__section2_li,
+.menu__section3_li,
+.menu__section1_span{
+    list-style: none;
+    color: #fff;
+    padding: 15px;
+}
+.menu__section1{
+    min-width: 100px;
+}
+
+.menu__section2_li:hover,
+.menu__section3_li:hover,
+.menu__section1_span:hover{
+    background-color: rgb(29, 115, 141);
+}
+
+.menu__section3_2_summary::marker{
+    content: " ";
+}
+
+.menu__section3_2_span{
+    color: #fff;
+    padding: 15px;
+}
+
+.menu__section3_2_p{
+    color: #fff;
+    padding: 15px;
+    background-color: #000;  
+    width: 200px; 
+}
+
+.menu__section3_2_p:hover,
+.menu__section3_2_span:hover{
+    background-color: rgb(29, 115, 141);
+}
+
+
+
+
+.menu__section3_2_summary{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/* ----------------------------------------------------------------- */
+
+
+.menu2{
+    background-color: #000;
+    display: flex;
+    height: 48.4px;
+    
+}
+
+.section1_p,
+.section2_summary_p,
+.section2_p{
+    color: #fff;
+    padding: 15px;
+    
+}
+
+.section2_p{
+    background-color: #000;
+    padding-left: 30px;
+}
+
+
+.section2_p:hover{
+    background-color: rgb(29, 115, 141);
+}
+
+.section2_summary::marker{
+    content: " ";
+}
+
+
+.section2{
+    flex-grow: 1;
+}
+
+.section2_summary{
+    display: flex;
+    justify-content: space-between;
+}
+
+section2_summary_p{
+    position: relative;
+}
+.section2_summary_p::after{
+    content:"";
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: #fff;
+    box-shadow: 0px 10px #fff,0px 20px #fff;
+    border-radius: 5px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------------------- */
+
+
+@media screen and (min-width: 1024px){
+
+    .menu__section3{
+        display:inline;
+    }
+    .menu__section3_2{
+        display:none;
+    }
+    .menu2{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.9px){
+
+    .menu__section3{
+        display: none;
+    }
+    .menu__section3_2{
+        display:inline;
+    }
+    .menu2{
+        display: none;
+    }
+
+
+}
+@media screen and (max-width: 767.9px){
+    .menu1{
+        display: none;
+    }
+    
+
+
+}
